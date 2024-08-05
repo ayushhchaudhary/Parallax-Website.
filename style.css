@@ -1,0 +1,91 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 1.8em;
+  color: #666;
+  overflow: hidden;
+}
+
+.video-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.img1,
+.img2 {
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.img1 {
+  background-image: url(./Media/PXL_20231219_074229686.jpg);
+}
+
+.img2 {
+  background-image: url(./Media/PXL_20231219_074229686.jpg);
+}
+
+.content-wrapper {
+  overflow-y: scroll;
+  height: 100vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.content-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.section {
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+}
+
+.section-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
